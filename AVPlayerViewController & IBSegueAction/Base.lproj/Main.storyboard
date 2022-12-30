@@ -343,7 +343,7 @@
                                     <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Jqd-5Q-Fag" kind="show" destinationCreationSelector="showWebsite:" id="KQD-N3-HWy"/>
+                                    <action selector="showWebsiteButton:" destination="fnu-f3-4pr" eventType="touchUpInside" id="R1u-Pc-ggN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfn-7e-hyp">
@@ -358,7 +358,17 @@
                                     <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="JkQ-Im-ywF" kind="show" destinationCreationSelector="showVideo:" id="puY-eZ-dEZ"/>
+                                    <action selector="playVideoButton:" destination="fnu-f3-4pr" eventType="touchUpInside" id="8Xm-xG-T1T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9U-GT-yny">
+                                <rect key="frame" x="312" y="335" width="33" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.forward.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="fnu-f3-4pr" eventType="touchUpInside" id="XaF-jn-Ide"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -370,38 +380,11 @@
                         <outlet property="IntroTextView" destination="ef5-Xx-d7B" id="arC-El-bCM"/>
                         <outlet property="directorLabel" destination="GHj-fg-Vom" id="uMZ-RK-NqA"/>
                         <outlet property="photoImageView" destination="jOt-uo-Xvo" id="8Ss-Wi-BB4"/>
-                        <outlet property="playButton" destination="Dfn-7e-hyp" id="4dj-t3-g5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwA-qq-ppq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1237.4045801526718" y="17.605633802816904"/>
-        </scene>
-        <!--Safari View Controller-->
-        <scene sceneID="ayG-JJ-Nw8">
-            <objects>
-                <viewController id="Jqd-5Q-Fag" customClass="SafariViewController" customModule="AVPlayerViewController___IBSegueAction" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e4l-hG-T4w">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="94j-7k-u1e"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7we-82-Suc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DOo-kd-GkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2071" y="-382"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="hKB-gr-8u8">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="JkQ-Im-ywF" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="y72-Bv-Kzt"/>
-                </avPlayerViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqD-4K-EIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2071" y="318"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X4c-9q-Aog">
@@ -440,6 +423,7 @@
         <image name="AVATAR2" width="1024" height="576"/>
         <image name="BG" width="360" height="720"/>
         <image name="Botanic Gardens" width="740" height="416"/>
+        <image name="arrowshape.turn.up.forward.circle.fill" catalog="system" width="128" height="123"/>
         <image name="jewel" width="2092" height="1312"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="play.rectangle" catalog="system" width="128" height="93"/>
@@ -454,6 +438,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

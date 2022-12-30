@@ -38,28 +38,4 @@ class ListTableViewController: UITableViewController {
         
         return introController
     }
-    
-    @IBSegueAction func showWebsite(_ coder: NSCoder) -> SafariViewController? {
-        let safariController = SafariViewController(coder: coder)
-        switch title {
-        case "星耀樟怡":
-            //給safariController(coder: coder)的參數webSite內容
-            safariController?.webSite = "https://www.jewelchangiairport.com/"
-        case "S.E.A. 海洋館":
-            safariController?.webSite = "https://www.pelago.co/en-SG/activity/pxelg-rws-sea-aquarium-ticket-singapore/?campaignid=17072198831&adgroupid=140538025180&adid=614838960392&gclid=Cj0KCQiAqOucBhDrARIsAPCQL1a3DD5zMAE9ra2--9qbH6rIYz14QxyH1dgNQurcU523fJuGzNMYENsaAndEEALw_wcB"
-        case "新加坡植物園":
-            safariController?.webSite = "https://www.nparks.gov.sg/SBG"
-        case "阿凡達：水之道":
-            safariController?.webSite = "https://www.avatar.com/"
-        case "花路阿朱媽":
-            safariController?.webSite = "https://www.harpersbazaar.com/tw/culture/filmandmusic/g42000475/ajoomma/"
-        case "憂鬱之島":
-            safariController?.webSite = "https://www.blueislandmovie.com/zh/%E4%B8%BB%E9%A0%81/"
-        default:
-            break
-        }
-        return safariController
-    }
-    
 }
-

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		775442052952C9C60073DCFC /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775442042952C9C60073DCFC /* SafariViewController.swift */; };
 		775521DA294AEE8D00907FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775521D9294AEE8D00907FC1 /* AppDelegate.swift */; };
 		775521DC294AEE8D00907FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775521DB294AEE8D00907FC1 /* SceneDelegate.swift */; };
 		775521E1294AEE8D00907FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775521DF294AEE8D00907FC1 /* Main.storyboard */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		775442042952C9C60073DCFC /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		775521D6294AEE8D00907FC1 /* AVPlayerViewController & IBSegueAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVPlayerViewController & IBSegueAction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		775521D9294AEE8D00907FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		775521DB294AEE8D00907FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			children = (
 				775521F1294AF76900907FC1 /* IntroViewController.swift */,
 				775521F3294AF79B00907FC1 /* ListTableViewController.swift */,
-				775442042952C9C60073DCFC /* SafariViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 				775521F2294AF76900907FC1 /* IntroViewController.swift in Sources */,
 				775521F4294AF79B00907FC1 /* ListTableViewController.swift in Sources */,
 				775521EE294AF26100907FC1 /* Movie.swift in Sources */,
-				775442052952C9C60073DCFC /* SafariViewController.swift in Sources */,
 				775521DC294AEE8D00907FC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
